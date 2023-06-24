@@ -1,3 +1,5 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
@@ -21,16 +23,8 @@ const markup = galleryItems
   .join("");
 galleryEl.insertAdjacentHTML("afterbegin", markup);
 
-const imgClick = (event) => {
-  event.preventDefault();
-
-  if (event.target.nodeName !== "IMG") {
-    return;
-  }
-
-  const instance = basicLightbox.create(`
-    <img src="${event.target.dataset.source}"width="800" height="600">`);
-  instance.show();
-};
-
-galleryEl.addEventListener("click", imgClick);
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+  captionType: 'alt',
+});
