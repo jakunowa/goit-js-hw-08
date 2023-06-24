@@ -1,3 +1,5 @@
+
+
 {
   "name": "goit-js-hw-08",
   "version": "2.0.0",
@@ -5,26 +7,16 @@
   "homepage": "https://jakunowa.github.io/goit-js-hw-08/",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "build": "parcel build src/index.html --public-url /goit-js-hw-08/"
   },
-  "repository": {
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/jakunowa/goit-js-hw-08.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
-  },
-  "dependencies": {
-    "modern-normalize": "^1.1.0"
-  },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
-  },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+    "parcel": "^2.8.3"
+  }
 }
