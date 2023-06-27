@@ -1,2 +1,0 @@
-var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{},o="object"==typeof e&&e&&e.Object===Object&&e,t="object"==typeof self&&self&&self.Object===Object&&self;o||t||Function("return this")(),Object.prototype.toString;const f=document.querySelector(".feedback-form");console.log(f);
-//# sourceMappingURL=03-feedback.91d660ce.js.map
