@@ -574,6 +574,12 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"eH52W":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _lodashThrottle = require("lodash.throttle");
+var _lodashThrottleDefault = parcelHelpers.interopDefault(_lodashThrottle);
+const formEl = document.querySelector(".feedback-form");
+const LOCAL_KEY = "feedback-form-state";
+console.log(formEl);
 
 },{}]},["fF395","eH52W"], "eH52W", "parcelRequire4c75")
 

@@ -40,6 +40,12 @@
   cursor: zoom-in;
 }
 
+/*!
+	By André Rinas, www.andrerinas.de
+	Documentation, www.simplelightbox.com
+	Available for use under the MIT License
+	Version 2.14.1
+*/
 body.hidden-scroll {
   overflow: hidden;
 }
@@ -147,7 +153,7 @@ body.hidden-scroll {
   left: 5px;
 }
 
-@media (min-width: 35.5em) {
+@media (width >= 35.5em) {
   .sl-wrapper .sl-navigation button {
     width: 44px;
   }
@@ -163,7 +169,7 @@ body.hidden-scroll {
   }
 }
 
-@media (min-width: 50em) {
+@media (width >= 50em) {
   .sl-wrapper .sl-navigation button {
     width: 44px;
   }
@@ -199,13 +205,13 @@ body.hidden-scroll {
   display: block;
 }
 
-@media (min-width: 35.5em) {
+@media (width >= 35.5em) {
   .sl-wrapper .sl-image img {
     border: 0;
   }
 }
 
-@media (min-width: 50em) {
+@media (width >= 50em) {
   .sl-wrapper .sl-image img {
     border: 0;
   }
@@ -216,13 +222,13 @@ body.hidden-scroll {
   border: 0;
 }
 
-@media (min-width: 35.5em) {
+@media (width >= 35.5em) {
   .sl-wrapper .sl-image iframe {
     border: 0;
   }
 }
 
-@media (min-width: 50em) {
+@media (width >= 50em) {
   .sl-wrapper .sl-image iframe {
     border: 0;
   }
