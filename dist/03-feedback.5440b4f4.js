@@ -594,7 +594,7 @@ function formSubmit(e) {
         email: email.value,
         message: message.value
     });
-    e.currentTarget.reset();
+    formEl.reset();
 }
 formEl.addEventListener("input", (0, _lodashThrottleDefault.default)(inputData, 500));
 formEl.addEventListener("submit", formSubmit);

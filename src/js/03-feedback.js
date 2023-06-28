@@ -15,7 +15,7 @@ function inputData(e) {
   function formSubmit(e) {
     e.preventDefault();
     console.log({ email: email.value, message: message.value });
-    e.currentTarget.reset()}
+   formEl.reset()}
 
     formEl.addEventListener('input', throttle(inputData, 500));
 formEl.addEventListener('submit', formSubmit);
