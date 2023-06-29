@@ -582,7 +582,7 @@ const LOCAL_KEY = "feedback-form-state";
 // const updateForm = JSON.parse(localStorage.getItem(LOCAL_KEY));
 const { email, message } = formEl.elements;
 function inputData(e) {
-    dataForm = {
+    const dataForm = {
         email: email.value,
         message: message.value
     };
