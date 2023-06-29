@@ -585,8 +585,8 @@ const getDurationTime = (data)=>{
     localStorage.setItem("videoplayer-current-time", data.seconds);
 };
 const saveTimeDelay = (0, _lodashThrottleDefault.default)(getDurationTime, 1000);
-player.on("timeupdate", saveTimeDelay);
 player.setCurrentTime(localStorage.getItem("videoplayer-current-time"));
+player.on("timeupdate", saveTimeDelay);
 
 },{"@vimeo/player":"kmmUG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","lodash.throttle":"bGJVT"}],"kmmUG":[function(require,module,exports) {
 /*! @vimeo/player v2.20.1 | (c) 2023 Vimeo | MIT License | https://github.com/vimeo/player.js */ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
