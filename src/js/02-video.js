@@ -10,7 +10,9 @@ const getDurationTime = data => {
     localStorage.setItem('videoplayer-current-time', data.seconds);
   };
   const saveTimeDelay = throttle(getDurationTime, 1000)
+  const getCurrentTime = localStorage.getItem('videoplayer-current-time');
 
-  player.setCurrentTime(localStorage.getItem('videoplayer-current-time')).then();
+
+  video.setCurrentTime(getCurrentTime).then();
   player.on('timeupdate',saveTimeDelay);
   
