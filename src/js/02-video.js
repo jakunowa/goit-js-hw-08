@@ -13,6 +13,6 @@ const getDurationTime = data => {
   const getCurrentTime = localStorage.getItem('videoplayer-current-time');
 
 
-  video.setCurrentTime(getCurrentTime).then();
+  player.setCurrentTime(getCurrentTime).then();
   player.on('timeupdate',saveTimeDelay);
   
