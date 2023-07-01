@@ -586,7 +586,7 @@ const getDurationTime = (data)=>{
 };
 const saveTimeDelay = (0, _lodashThrottleDefault.default)(getDurationTime, 1000);
 const getCurrentTime = localStorage.getItem("videoplayer-current-time");
-video.setCurrentTime(getCurrentTime).then();
+player.setCurrentTime(getCurrentTime).then();
 player.on("timeupdate", saveTimeDelay);
 
 },{"@vimeo/player":"kmmUG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","lodash.throttle":"bGJVT"}],"kmmUG":[function(require,module,exports) {
